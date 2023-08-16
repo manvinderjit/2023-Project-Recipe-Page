@@ -4,6 +4,7 @@
     --color-background-theme-dark-lc: rgb(88, 196, 121);
     --color-background-theme-light-hc: rgb(255, 221, 15);
     --color-background-theme-light-lc: rgb(233, 174, 10);
+    --color-text-dark: rgb(71, 71, 71);
 }
 
 body {
@@ -11,6 +12,7 @@ body {
     margin: 0 auto;
     padding: 0;
     max-width: 1920px;
+    color: var(--color-text-dark);
 }
 
 header {
@@ -36,6 +38,11 @@ main {
     gap: 4rem;
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-background-theme-dark-hc);
+ }
+
 /* Header: Logo */
 
 .logo {
@@ -54,14 +61,22 @@ main {
     align-items: center;
 }
 
-.breadcrumbs {        
+.breadcrumbs {
     max-width: 1220px;
+    
+    padding: 1rem 0;    
     margin: 2rem auto 0 auto;
+    background-color: var(--color-background-theme-light-hc);    
+    
 }
 
-a {
-   text-decoration: none;
-   color: var(--color-background-theme-dark-hc);
+.breadcrumbs a {
+    font-weight: 500;
+    color: var(--color-background-theme-dark-hc);
+}
+
+.breadcrumbs a:hover {
+    font-size: 1.2rem;
 }
 
 .top-navigation a {
@@ -75,6 +90,9 @@ a {
     color: var(--color-background-theme-light-hc);
 }
 
+/* Main */
+
+
 /* Main: Article */
 
 main article > * {
@@ -82,8 +100,17 @@ main article > * {
 }
 
 main section p {
-    text-align: justify;
-    
+    text-align: justify;    
+}
+
+article h2 {
+    color: var(--color-background-theme-dark-hc);
+    background-color: var(--color-background-theme-light-hc);
+    padding: 0.5rem 1rem;
+}
+
+article ul {
+    padding-left: 20px;
 }
 
 /* Main Article: Section Header */
@@ -101,4 +128,32 @@ main section p {
     width: 800px;
     max-height: 600px;
     object-fit: cover;
+}
+
+/* Main Article: Section Ingredients */
+.section-ingredients ul li {
+    padding: 0.5rem 0;    
+}
+
+/* Main Article: Section Preparation Steps */
+
+.section-preparation-steps {
+
+}
+.section-preparation-steps ul {
+    padding-left: 0;
+}
+
+.section-preparation-steps li {
+    list-style: none;
+    padding: 0.2rem 0;        
+}
+
+
+footer {    
+    background-color: var(--color-background-theme-dark-hc);
+    color: var(--color-background-theme-light-hc);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
 }
