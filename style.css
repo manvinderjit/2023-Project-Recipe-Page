@@ -19,12 +19,13 @@ header {
 
 
 nav ul {
+    margin: 0;
     display: flex;
-    gap: 1rem;    
+    gap: 1rem;
 }
 
-nav li {
-    list-style: none;
+nav li, .ratings ul {
+    list-style: none;    
 }
 
 main {
@@ -38,7 +39,11 @@ main {
 /* Header: Logo */
 
 .logo {
-    color: var(--color-background-theme-dark-hc);
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-background-theme-dark-hc);
+    color: var(--color-background-theme-light-hc);
+    height: 2rem;
 }
 
 /* Header: Navigation */
@@ -49,24 +54,51 @@ main {
     align-items: center;
 }
 
-.breadcrumbs {
+.breadcrumbs {        
     max-width: 1220px;
-    margin: auto;
+    margin: 2rem auto 0 auto;
 }
 
 a {
-    text-decoration: none;
-    color: var(--color-background-theme-dark-hc);
+   text-decoration: none;
+   color: var(--color-background-theme-dark-hc);
 }
 
-a:hover {
+.top-navigation a {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    padding: 0 1rem;
+}
+.top-navigation a:hover {
     background-color: var(--color-background-theme-dark-hc);
     color: var(--color-background-theme-light-hc);
 }
 
 /* Main: Article */
 
+main article > * {
+    max-width: 800px;
+}
+
 main section p {
     text-align: justify;
     
+}
+
+/* Main Article: Section Header */
+.section-header h1 {
+    font-size: 2rem;
+    color: var(--color-background-theme-dark-hc);
+}
+
+.ratings {
+    margin-bottom: 1rem;    
+    display: flex;
+}
+
+.section-header img {
+    width: 800px;
+    max-height: 600px;
+    object-fit: cover;
 }
