@@ -28,11 +28,6 @@ main {
     gap: 4rem;
 }
 
-a {
-    text-decoration: none;
-    color: var(--color-background-theme-dark-hc);
- }
-
 /* Header: Logo */
 
 .logo {
@@ -117,6 +112,11 @@ main section p {
     padding: 0.5rem 1rem;
 }
 
+.article-green-a {
+    text-decoration: none;
+    color: var(--color-background-theme-dark-hc);
+ }
+
 article ul {
     padding-left: 20px;
 }
@@ -197,6 +197,44 @@ article section {
     margin-bottom: 2rem;
 }
 
+
+/* Aside */
+
+.aside-similar-recipes h2 {
+    font-size: 2rem;
+    color: var(--color-background-theme-dark-hc);
+    margin: 2rem 0;
+}
+
+.aside-similar-recipes > div {
+    margin-bottom: 3rem;
+}
+
+.aside-similar-recipes div:nth-child(odd) h3 {
+    color: var(--color-background-theme-light-hc);
+    background-color: var(--color-background-theme-dark-hc);
+    padding: 0.5rem 1rem;
+}
+
+.aside-similar-recipes div:nth-child(even) h3 {
+    color: var(--color-background-theme-dark-hc);
+    background-color: var(--color-background-theme-light-hc);
+    padding: 0.5rem 1rem;
+}
+
+.aside-similar-recipes img {
+    overflow: hidden;
+}
+
+.aside-similar-recipes p {
+    text-align: justify;
+}
+
+aside a {    
+    text-decoration: none;
+    color: var(--color-text-dark);
+}
+
 /* Footer  */
 
 footer {    
@@ -208,3 +246,10 @@ footer {
     justify-content: center;
     padding: 1rem 0;
 }
+
+
+/* 
+    Add Author Bio
+    Adjust Aside Anchor Placement
+
+*/
