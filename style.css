@@ -31,11 +31,12 @@ main {
 /* Header: Logo */
 
 .logo {
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
+    font-size: 1.8rem;
+    padding: 1.5rem;
     background-color: var(--color-background-theme-dark-hc);
     color: var(--color-background-theme-light-hc);
     height: 2rem;
+    font-weight: bold;
 }
 
 /* Header: Navigation */
@@ -57,21 +58,20 @@ header nav li, .ratings ul {
 }
 
 .breadcrumbs {
-    max-width: 1220px;
-    
+    max-width: 1220px;    
     padding: 1rem 0;    
-    margin: 2rem auto 0 auto;
+    margin: 0 auto 0 auto;
     background-color: var(--color-background-theme-light-hc);    
     
 }
 
 .breadcrumbs a {
-    font-weight: 500;
-    color: var(--color-background-theme-dark-hc);
+    font-weight: 500;    
 }
 
-.breadcrumbs a:hover {
-    font-size: 1.2rem;
+.breadcrumbs a:hover {    
+    background-color: var(--color-background-theme-dark-hc);
+    color: var(--color-background-theme-light-hc);
 }
 
 .top-navigation a {
@@ -79,6 +79,9 @@ header nav li, .ratings ul {
     height: 3rem;
     align-items: center;
     padding: 0 1rem;
+    text-decoration: none;
+    color: var(--color-background-theme-dark-hc);
+    font-weight: 500;
 }
 .top-navigation a:hover {
     background-color: var(--color-background-theme-dark-hc);
@@ -126,9 +129,12 @@ article section {
 }
 
 /* Main Article: Section Header */
+
 .section-header h1 {
     font-size: 2rem;
-    color: var(--color-background-theme-dark-hc);
+    background-color: var(--color-background-theme-dark-hc);
+    color: var(--color-background-theme-light-hc);
+    padding: 0.5rem 1rem;
 }
 
 .ratings {
@@ -147,6 +153,7 @@ article section {
 }
 
 /* Main Article: Section Ingredients */
+
 .section-ingredients ul li {
     padding: 0.5rem 0;    
 }
@@ -197,12 +204,13 @@ article section {
     margin-bottom: 2rem;
 }
 
-
 /* Aside */
 
 .aside-similar-recipes h2 {
     font-size: 2rem;
-    color: var(--color-background-theme-dark-hc);
+    background-color: var(--color-background-theme-dark-hc);
+    color: var(--color-background-theme-light-hc);
+    padding: 0.5rem 1rem;    
     margin: 2rem 0;
 }
 
@@ -246,10 +254,3 @@ footer {
     justify-content: center;
     padding: 1rem 0;
 }
-
-
-/* 
-    Add Author Bio
-    Adjust Aside Anchor Placement
-
-*/
